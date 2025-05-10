@@ -38,9 +38,9 @@ on join:
     while player is online:
         loop 3 times:
             set {_i%loop-iteration-2%} to {-latestInputs::%player%::%loop-iteration-2%}
-        send actionbar "<#ABCDEF>[ %{_i1}% | %{_i2}% | %{_i3}% ]  ["
+        send actionbar "<#D0D0D0>[ <#ABCDEF>%{_i1}% <#E0E0E0>| <#ABCDEF>%{_i2}% <#E0E0E0>| <#ABCDEF>%{_i3}% <#D0D0D0>]  [ <#A3C9FF>%player's current essence% <#E0E0E0>| <#A3C9FF>%player's max essence% <#D0D0D0>]"
         wait 2 ticks
-        if mod(loop-iteration, 40) = 0:
+        if mod(loop-iteration, 20) = 0:
             # Checks whether player can get 10 essence without overflowing
             if (player's current essence  + 10) <= player's max essence:
                 add 10 to player's current essence
