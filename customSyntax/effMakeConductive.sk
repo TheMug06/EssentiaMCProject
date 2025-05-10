@@ -1,0 +1,4 @@
+# Makes tools conductive, scuffed but works, couldn't make it work with item itself D:
+effect make %player%'s tool conductive:
+    trigger:
+        set boolean tag "isConductive" of custom nbt of expr-1's tool to true
