@@ -33,7 +33,7 @@ on input key press:
         default:
             broadcast "default"
 
-# Shows inputs as an actionbar, starts on join, also regenerates essence every 
+# Shows inputs as an actionbar, starts on join, also regenerates essence every 2 seconds
 on join:
     while player is online:
         loop 3 times:
