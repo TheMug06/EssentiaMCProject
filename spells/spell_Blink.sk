@@ -1,0 +1,29 @@
+# Blink (tp) spell (I love movement spells)
+function SPELL_Blink(p: player):
+
+    if {_p}'s essence >= 25:
+
+        remove 25 from {_p}'s essence
+
+        set {_direction} to normalized vector from yaw ({_p}'s yaw) and pitch ({_p}'s pitch)
+        set {_vec} to {_direction} * (10 * power mod from ({_p}'s essence color))
+        
+        
+        set {_stab} to stability modifier from ({_p}'s essence color)
+
+        if {_stab} < 1:
+            add random integer between 0 and (10 * stability modifier from ({_p}'s essence color)) to z component of {_vec}
+            add random integer between 0 and (10 * stability modifier from ({_p}'s essence color)) to x component of {_vec}
+
+        set {_targetLoc} to {_p}'s location ~ {_vec}
+
+        if all:
+            block at {_targetLoc} is air
+            block 1 above {_targetLoc} is air
+        then:
+            teleport {_p} to {_targetLoc}
+
+
+    else:
+
+        send "<#ABCDEF>[Essentia] &4Could not cast <#ABCDEF>""Blink""&4, your essence is too low!" to {_p}
