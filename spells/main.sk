@@ -1,0 +1,46 @@
+# Sets player's inputs to "W" when they join, just so it is not <none> across restarts
+on join:
+    loop 3 times:
+        set {-latestInputs::%player%::%loop-iteration%} to "W"
+
+# input listener and manager
+on input key press:
+    # Removes held keys from input keys to only keep the newest one pressed
+    set {_keysNew::*} to event-inputkeys
+    set {_keysOld::*} to past event-inputkeys
+    remove {_keysOld::*} from {_keysNew::*}
+
+    # Have to do this for switch to work ?
+    set {_newKey} to first element of {_keysNew::*}
+
+    # Checks which key was pressed, then adds it to the inputs :D
+    switch {_newKey}:
+        case forward key:
+            newInput(player, "F")
+        case backward key:
+            newInput(player, "B")
+        case right key:
+            newInput(player, "R")
+        case left key:
+            newInput(player, "L")
+        case jump key:
+            newInput(player, "J")
+        case sprint key:
+            newInput(player, "S")
+        case sneak key:
+            newInput(player, "C")
+        
+        default:
+            broadcast "default"
+
+# Shows inputs as an actionbar, starts on join
+on join:
+    while player is online:
+        loop 3 times:
+            set {_i%loop-iteration-2%} to {-latestInputs::%player%::%loop-iteration-2%}
+        send actionbar "<#ABCDEF>[ %{_i1}% | %{_i2}% | %{_i3}% ]"
+        wait 2 ticks
+        
+on right click:
+    if player's tool is conductive:
+        make player cast spells
