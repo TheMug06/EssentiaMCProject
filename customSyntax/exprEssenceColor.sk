@@ -1,0 +1,6 @@
+# Gets or sets a player's essence color
+player property essence color:
+    get:
+        return string tag "essenceColor" of custom nbt of expr-1
+    set:
+        set string tag "essenceColor" of custom nbt of expr-1 to change value
