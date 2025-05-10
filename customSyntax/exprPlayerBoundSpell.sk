@@ -1,0 +1,6 @@
+# Gets or sets the spell a player has bound to an input
+player property %string% [bound] spell:
+    get:
+        return {boundSpells::%expr-1%::%expr-2%}
+    set:
+        set {boundSpells::%expr-1%::%expr-2%} to change value
