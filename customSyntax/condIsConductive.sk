@@ -1,0 +1,5 @@
+# Checks whether an item is conductive (can cast)
+condition %item% is conductive:
+    check:
+        if boolean tag "isConductive" of custom nbt of expr-1 is true:
+            continue
