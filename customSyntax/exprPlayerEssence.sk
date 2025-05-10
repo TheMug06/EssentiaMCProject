@@ -1,0 +1,10 @@
+# Gets, sets, removes or adds to/from essence (mana) of a player
+player property [current] essence:
+    get:
+        return int tag "currentEssence" of custom nbt of expr-1
+    set:
+        set int tag "currentEssence" of custom nbt of expr-1 to change value
+    remove:
+        remove change value from int tag "currentEssence" of custom nbt of expr-1
+    add:    
+        add change value to int tag "currentEssence" of custom nbt of expr-1
