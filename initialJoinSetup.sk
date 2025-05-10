@@ -1,0 +1,38 @@
+on join: # Just for testing, will be first join latr
+    set player's current essence to 100
+    set player's max essence to 100
+    set {_rand} to random integer between 1 and 100
+    ###
+    Chances for colors:
+        5% to get one of these
+        Black: 1% = 100
+        White: 4% = 96 - 99
+
+        30% to get one of these
+        Purple: 10% 86 - 95
+        Pink: 10% 76 - 85
+        Orange: 10% 66 - 75
+
+        65% to get one of these
+        Red: 22% 44 - 65
+        Blue: 22% 22 - 43
+        Yellow: 21% 1 - 21
+    ###
+    if {_rand} is between 1 and 21:
+        set player's essence color to "yellow"
+    else if {_rand} is between 22 and 43:
+        set player's essence color to "blue"
+    else if {_rand} is between 44 and 65:
+        set player's essence color to "red"
+    else if {_rand} is between 66 and 75:
+        set player's essence color to "orange"
+    else if {_rand} is between 76 and 85:
+        set player's essence color to "pink"
+    else if {_rand} is between 86 and 95:
+        set player's essence color to "purple"
+    else if {_rand} is between 96 and 99:
+        set player's essence color to "white"
+    else if {_rand} is 100:
+        set player's essence color to "black"
+
+    send formatted "<#ABCDEF>[Essentia] You have received the <%player's essence color%>%player's essence color% essence"
