@@ -33,13 +33,22 @@ on input key press:
         default:
             broadcast "default"
 
-# Shows inputs as an actionbar, starts on join
+# Shows inputs as an actionbar, starts on join, also regenerates essence every 
 on join:
     while player is online:
         loop 3 times:
             set {_i%loop-iteration-2%} to {-latestInputs::%player%::%loop-iteration-2%}
-        send actionbar "<#ABCDEF>[ %{_i1}% | %{_i2}% | %{_i3}% ]"
+        send actionbar "<#ABCDEF>[ %{_i1}% | %{_i2}% | %{_i3}% ]  ["
         wait 2 ticks
+        if mod(loop-iteration, 40) = 0:
+            # Checks whether player can get 10 essence without overflowing
+            if (player's current essence  + 10) <= player's max essence:
+                add 10 to player's current essence
+            # Checks whether player's essence is even below max at all, if it can't fit 10
+            else if player's current essence < player's max essence:
+                set player's current essence to player's max essence
+            
+
         
 on right click:
     if player's tool is conductive:
