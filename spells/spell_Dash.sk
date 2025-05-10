@@ -1,0 +1,15 @@
+# Dash spell (I love movement spells)
+function SPELL_Dash(p: player):
+
+    if {_p}'s essence >= 15:
+
+        remove 15 from {_p}'s essence
+
+        set {_direction} to normalized vector from yaw ({_p}'s yaw) and pitch ({_p}'s pitch)
+        set {_velocity} to {_direction} * (2 + power modifier from ({_p}'s essence color))
+        set y component of {_velocity} to 0.5
+        set velocity of {_p} to {_velocity}
+
+    else:
+
+        send "<#ABCDEF>[Essentia] &4Could not cast <#ABCDEF>""Dash""&4, your essence is too low!" to {_p}
