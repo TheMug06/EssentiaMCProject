@@ -1,0 +1,8 @@
+# Gets the power modifier associated with a certain essence color
+expression power [mod[ifier]] from %string%:
+    get:
+        return {-powerModifiers::%expr-1%}
+
+# Assigns power modifiers to colors when script is (re)loaded
+on load:
+    set {-powerModifiers::red} to 1.5
