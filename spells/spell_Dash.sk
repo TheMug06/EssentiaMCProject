@@ -7,6 +7,12 @@ function SPELL_Dash(p: player):
 
         set {_direction} to normalized vector from yaw ({_p}'s yaw) and pitch ({_p}'s pitch)
         set {_velocity} to {_direction} * (2 + power modifier from ({_p}'s essence color))
+
+        set {_stab} to stability modifier from ({_p}'s essence color)
+        # Stability of 1 or higher gets a straight dash, lower than 1 gets a lil sideways movement in some directions
+        if {_stab} < 1:
+            add (((1 / {_stab}) - 1) * 3) to z component of {_velocity}
+
         set y component of {_velocity} to 0.5
         set velocity of {_p} to {_velocity}
 
