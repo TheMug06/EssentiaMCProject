@@ -1,0 +1,15 @@
+using script reflection
+
+# Makes a player cast their spells... duh
+effect make %player% cast [[a] spell[s]]:
+    trigger:
+        # Loops inputs
+        loop {-latestInputs::%expr-1%::*}:
+            # Gets spell bound to current looped input
+            set {_spell} to expr-1's loop-value spell
+
+            # Gets function belonging to that spell
+            set {_spellFunction} to function named "SPELL_%{_spell}%"
+
+            # Casts spell using the player
+            run {_spellFunction} with arguments expr-1
