@@ -1,0 +1,4 @@
+function newInput(p: player, i: string):
+    delete {-latestInputs::%{_p}%::1}
+    set {-latestInputs::%{_p}%::*} to {-latestInputs::%{_p}%::*}
+    add {_i} to {-latestInputs::%{_p}%::*}
