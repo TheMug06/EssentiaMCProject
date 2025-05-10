@@ -6,3 +6,10 @@ expression stability [mod[ifier]] from %string%:
 # Assigns power modifiers to colors when script is (re)loaded
 on load:
     set {-stabilityModifiers::red} to 0.7
+    set {-stabilityModifiers::blue} to 1.3
+    set {-stabilityModifiers::purple} to 1.1
+    set {-stabilityModifiers::pink} to 0.9
+    set {-stabilityModifiers::yellow} to 1.2
+    set {-stabilityModifiers::orange} to 1
+    set {-stabilityModifiers::black} to 0.5
+    set {-stabilityModifiers::white} to 2
