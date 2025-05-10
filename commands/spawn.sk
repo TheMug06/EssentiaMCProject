@@ -1,0 +1,4 @@
+# Self-explanatory
+command /spawn:
+    trigger:
+        teleport player to spawn
