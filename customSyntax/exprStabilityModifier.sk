@@ -1,0 +1,8 @@
+# Gets the power modifier associated with a certain essence color
+expression stability [mod[ifier]] from %string%:
+    get:
+        return {-stabilityModifiers::%expr-1%}
+
+# Assigns power modifiers to colors when script is (re)loaded
+on load:
+    set {-stabilityModifiers::red} to 0.7
