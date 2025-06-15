@@ -1,0 +1,156 @@
+I gotta make a place for me to put stuff, it'll help me against procrastination!!!!
+
+- Spells... ugh
+    - 
+
+- NPCs
+    - Players?
+    - Custom models with interactions? (Probably)
+
+- Rituals
+    - Binding (Introduction)
+    - Change (Changing essence colours)
+    - Infusion (Simple)
+    - Convergence (Merge your essence with another user's, both gain hybrid colour. One time use, choose wisely. ! only usable with mixable colours !)
+    - Union of The Source
+    - Unbinding (Create (temporarily) essence severing weapons, PvEvP use (PvP will ofcourse be optional))
+    - Echoes
+    - Balance (Restore natural order)
+    - Advanced infusion
+    - Resonance (Create a bond)
+    - Awakening (BUFFFFFFFFFF (more colour potential?!)
+    - Chains (Release the trapped humanity inside a severed person)
+    - Emptiness (Become colourless, evil (VERY endgame, like final boss type shi), might not do this.)
+
+- Settlements, people, quests, POIs
+    - Ashenglade (Starter village, small population)
+        - NPCs;
+            - Elda moraine: Old herbalists who still believes in the Primes
+            - Tallis: Your friend, a curious person dreaming of becoming an essence mage
+        - Quests;
+            - Kindling the Past
+            - Ashen Whispers
+            - Roots Below
+        - Tablets;
+            - Ritual of Binding
+
+    - Virestead (Mountain Outpost, small pop, miners)
+        - NPCs;
+            - Captain Roan: Gruff leader, fears/despises essence (and its users)
+            - Lucen: A scholar studying tablets of knowledge (Leads the way to more rituals(-ish)!)
+        - Quests;
+            - Splintered Stone
+            - Echoes in the Rock
+            - The Blood Tunnel
+        - Tablets;
+            - None
+
+    - Emberhollow (Abandoned forge, POI, INFUSION!!!!!)
+        - NPCs;
+            - None
+        - Quests;
+            - Flames Remember
+            - The Hollow Hammer
+            - Ashen Chains
+        - Tablets;
+            - Ritual of Infusion (Might not become a ritual, could be too complicated for a simple/often-used mechanic. Maybe just its unlock)
+
+    - Ravennest (Tree city!!!, medium pop)
+        - NPCs;
+            - Grand Druid Veylan: Leader, leads neutral order of seers
+            - Yselia: Green essence user, teaches Balance
+        - Quests;
+            - Bough and Balance
+            - Songs of the Bark
+            - Trial of Growth (TREE PET!!!!!!)
+        - Tablets;
+            - Ritual of Balance
+
+    - Dustmere (Desert town, small pop, traders)
+        - NPCs;
+            - Arminas: A trader who sells relics (Powerful items)
+            - Senira: An essence user hiding their power, studying the Merge
+        - Quests;
+            - Sandglass Silence
+            - The Glass Mirage
+            - Eclipsed Truth
+        - Tablets;
+            - None
+
+    - Thornhold (Warrior stronghold, medium pop, at the edge of the (Source/Core/Whatever I'll call it)-infested lands)
+        - NPCs;
+            - Commander Revkyr: Leads ruthless assaults on infested lands
+            - Kalla: A soldier-turned-pacifist secretly trying to help severed (colourless who retained their humanity, but lost a part of it) victims (They are often "discharged")
+        - Quests;
+            - Writ in Blood
+            - Chains Unbroken
+            - Fangs of the Void
+        - Tablets;
+            - Ritual of Chains
+
+    - Caer Nyx (Ancient Ruin, POI, semcrets)
+        - NPCs;
+            - The Shard-Mother: A Prime ghost who guides the player.
+            - Nyx Echoes: memory phantoms that show the player history
+        - Quests;
+            - Awaken the Echoes
+            - The Forgotten Pact
+            - Dust to Flesh
+        - Tablets;
+            - None
+
+    - Sunreach (Scholars' Capital, large pop, Scholars, duh)
+        - NPCs;
+            - Professor Ilivien: Colourless, bound by choice.
+            - Councilor Farwyn: Pushes for global essence regulation
+        - Quests;
+            - The Converging Path
+            - A Binding Above All
+            - The Law of Colour
+        - Tablets;
+            - None
+
+    - Duskwatch (Cliffside sanctuary, medium pop, safe haven for anyone)
+        - NPCs;
+            - Maelis: Voidseer (forbidden magic) who teaches awakening
+            - Serenth: A reclusive "former" colourless.
+        - Quests;
+            - What the Void Remembers
+            - The Mirror-Self
+            - The Silent Ones
+        - Tablets;
+            - Ritual of Awakening
+
+    - The Heartspire (Endgame zone, POI/Settlement hybrid, right next to the Core/whatever)
+        - NPCs;
+            - None, for now
+        - Quests;
+            - Union
+            - Storm at the Core
+            - The Merge
+        - Tablets;
+            - None
+
+    - The Gloamroad (POI/Road)
+        - NPCs;
+            - Bandits
+        - Quests;
+            - None
+        - Tablets;
+            - None
+
+    - Colourless Crater (POI)
+        - NPCs;
+            - Colourless
+        - Quests;
+            - None
+        - Tablets;
+            - None
+
+      - Shrine of the Ten (POI)
+        - NPCs;
+            - None
+        - Quests;
+            - None
+        - Tablets;
+            - None
